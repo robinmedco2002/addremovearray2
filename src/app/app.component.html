@@ -1,0 +1,81 @@
+
+<style>
+  .toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: left;
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
+}
+.content {
+  display:flex;
+  margin: 0px;
+  padding: 0 16px;
+  max-width: auto;
+  flex-direction: column;
+  align-items: left;
+}
+
+.data {
+  display:flex;
+  margin: 0px;
+  padding: 80px 16px;
+  max-width: auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+</style>
+
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+
+<div class="content"> <h2> Design Solution</h2>
+</div>  
+  
+</div>
+
+<div class="data" role="main">
+
+ <h1>{{ title }} </h1>
+</div>
+
+
+ 
+<h2> Employee List </h2>
+
+
+<ol class="textFont">
+<li *ngFor="let contact of contactlist">
+
+    
+  {{contact.name}}
+  
+&nbsp; 
+&nbsp; 
+  <button class="buttondel" (click)="deleteContact(contact.name)"> Delete </button>
+<p></p>
+
+
+
+</li>
+</ol>
+<form (submit)="addContact()">
+ 
+  
+  <input type="text" [(ngModel)]="txtName" name="name" />
+
+  &nbsp;
+
+<button class="button" type="submit"> Add Contact</button>
+</form>
+
+
+
+
+<router-outlet></router-outlet>

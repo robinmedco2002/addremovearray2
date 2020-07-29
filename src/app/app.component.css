@@ -1,0 +1,76 @@
+input, select, textarea { 
+     padding: 5px 5px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+   
+    background-color: #f8f8f8;
+    resize: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+      }
+
+      .textFont {
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 16px;
+        letter-spacing: 0px;
+        word-spacing: 0px;
+        color: #2716B7;
+        font-weight: 700;
+        text-decoration: none;
+        font-style: normal;
+        font-variant: normal;
+        text-transform: none;
+        padding: 5px 15px 40px;
+        
+        }
+
+
+    .button {
+        display: inline-block;
+        padding: 10px 10px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #1976d2;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 4px #999;
+      }
+      
+      .button:hover {background-color: #0c5dac}
+      
+      .button:active {
+        background-color: #043c74;
+        box-shadow: 0 4px #666;
+        transform: translateY(2px);
+      }
+
+
+
+
+
+      .buttondel {
+        display: inline-block;
+        padding: 5px 5px;
+        font-size: 12px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #1976d2;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 1px #999;
+      }
+      
+      .buttondel:hover {background-color: #e60534}
+      
+      .buttondel:active {
+        background-color: #7d021c;
+        box-shadow: 0 0px #666;
+        transform: translateY(0px);
+      }
